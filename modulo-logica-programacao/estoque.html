@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque de Peças</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Estoque de Peças</h1>
+    </header>
+
+    <script>
+        let saldo = Number(prompt('Informe saldo: '))
+        document.write('Saldo Inicial: ' + saldo + '<br>')
+
+        let encerrar = 'n'
+
+        while (encerrar == 'n') {
+
+            const tipo = Number(prompt('Informe tipo de entrada: '))
+            const qtd = Number(prompt('Quantidade: '))
+
+            if (tipo === 1) {
+                saldo = saldo + qtd
+                document.write('Entrada: ' + qtd + '<br>')
+            } else { //tipo === 2
+                if (saldo >= qtd) {
+                    saldo = saldo - qtd
+                    document.write('Saida: ' + qtd + '<br>')
+                } else {
+                    document.write('Saldo insuficiente!')
+                    alert('Saldo Insuficiente!')
+                }
+            }
+            document.write('Saldo: ' + saldo + '<br>')
+            encerrar = prompt('Encerrar? (s/n): ')
+        }
+        document.write('Sistema Encerrado!' + '<br>')
+    </script>
+
+</body>
+</html>
