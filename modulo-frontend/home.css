@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+}
+
+navbar {
+    background-color: #00A3FF;
+    padding: 0px;
+    
+}
+
+.container-fluid, .navbar-brand {
+    padding: 0px;
+    margin-left: 20px;
+}
+
+main {
+    background-color: #B8E6FF;
+}
+
+
+/*footer {
+    text-align: center;
+}
+
+footer p{
+    font-weight: bold;
+    padding: 10px;
+}*/
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    padding: 30px;
+}
+
+#jogo, #console, #pc-gamer {
+    width: 200px;
+    height: auto;
+}
